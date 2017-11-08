@@ -49,8 +49,14 @@ public class LoginActivity extends Activity {
 
                     }
                 };
+
         //Add listener to Login button
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(loginAdapter);
+    }
+
+    @Override
+    public void onBackPressed(){
+        //Block the user from going to the previous activity
     }
 }

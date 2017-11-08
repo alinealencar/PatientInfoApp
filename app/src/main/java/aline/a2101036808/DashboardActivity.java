@@ -117,6 +117,16 @@ public class DashboardActivity extends Activity {
                     }
                 };
 
+        //Adapter for the Logout button
+        AdapterView.OnClickListener logoutAdapter =
+                new AdapterView.OnClickListener() {
+                    @Override
+                    public void onClick(View view){
+                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                        startActivity(intent);
+                    }
+                };
+
 
         //Add listener to Enter Test button
         Button btnEnterTest = (Button) findViewById(R.id.btnEnterTest);
@@ -132,5 +142,14 @@ public class DashboardActivity extends Activity {
         //Add listener to Patient Information button
         btnDisplayPatient.setOnClickListener(displayPatient);
 
+        //Add listener to Logout button
+        Button btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(logoutAdapter);
+
+    }
+
+    @Override
+    public void onBackPressed(){
+        //Block the user from going to the login activity by pressing the back button
     }
 }
