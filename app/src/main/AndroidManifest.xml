@@ -14,18 +14,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DashboardActivity"/>
-        <activity android:name=".EnterTestActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activity.DashboardActivity"/>
+        <activity android:name=".activity.EnterTestActivity" />
+        <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".EnterPatientActivity" />
-        <activity android:name=".DisplayTestActivity" />
-        <activity android:name=".DisplayPatientActivity"></activity>
+        <activity android:name=".activity.EnterPatientActivity" />
+        <activity android:name=".activity.DisplayTestActivity" />
+        <activity android:name=".activity.DisplayPatientActivity"></activity>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package aline.a2101036808;
+package aline.a2101036808.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -51,7 +51,7 @@ public class MedicalDatabaseHelper extends SQLiteOpenHelper {
             "glucose REAL," +
             "cholesterol REAL);";
 
-    MedicalDatabaseHelper(Context context){
+    public MedicalDatabaseHelper(Context context){
         super(context, DB_NAME, null, DB_VERSION);
     }
 

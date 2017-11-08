@@ -1,4 +1,4 @@
-package aline.a2101036808;
+package aline.a2101036808.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.TextView;
+
+import aline.a2101036808.R;
+import aline.a2101036808.activity.DashboardActivity;
+import aline.a2101036808.database.MedicalDatabaseHelper;
 
 public class LoginActivity extends Activity {
 

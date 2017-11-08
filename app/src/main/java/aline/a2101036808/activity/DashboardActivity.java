@@ -1,4 +1,4 @@
-package aline.a2101036808;
+package aline.a2101036808.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +12,9 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
+import aline.a2101036808.R;
 import aline.a2101036808.dataModel.Patient;
+import aline.a2101036808.database.MedicalDatabaseHelper;
 
 public class DashboardActivity extends Activity {
     int selectedPatientId;

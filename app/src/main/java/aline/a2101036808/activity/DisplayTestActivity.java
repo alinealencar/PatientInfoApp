@@ -1,4 +1,4 @@
-package aline.a2101036808;
+package aline.a2101036808.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,7 +13,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import aline.a2101036808.R;
+import aline.a2101036808.activity.DashboardActivity;
 import aline.a2101036808.dataModel.Test;
+import aline.a2101036808.database.MedicalDatabaseHelper;
 
 public class DisplayTestActivity extends Activity {
     List<Test> tests;

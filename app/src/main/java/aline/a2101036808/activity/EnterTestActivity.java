@@ -1,4 +1,4 @@
-package aline.a2101036808;
+package aline.a2101036808.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import aline.a2101036808.dataModel.Patient;
+import aline.a2101036808.R;
+import aline.a2101036808.activity.DashboardActivity;
 import aline.a2101036808.dataModel.Test;
+import aline.a2101036808.database.MedicalDatabaseHelper;
 import aline.a2101036808.helper.ValidateHelper;
 
 public class EnterTestActivity extends Activity {
@@ -25,7 +26,7 @@ public class EnterTestActivity extends Activity {
 
         //Set header with the name of the patient whose test is being added
         String PATIENTNAME = getIntent().getStringExtra("patientName");
-        ((TextView) findViewById(R.id.txtTestPatientName)).setText(PATIENTNAME);
+        ((TextView) findViewById(R.id.txtTestPatientName)).setText("Enter a new test for: " + PATIENTNAME);
 
         //Adapter for the Cancel button
         AdapterView.OnClickListener cancel =

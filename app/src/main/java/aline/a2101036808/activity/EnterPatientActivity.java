@@ -1,9 +1,7 @@
-package aline.a2101036808;
+package aline.a2101036808.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -17,7 +15,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import aline.a2101036808.R;
 import aline.a2101036808.dataModel.Patient;
+import aline.a2101036808.database.MedicalDatabaseHelper;
 
 public class EnterPatientActivity extends Activity {
     Spinner deptSpinner, doctorSpinner, roomSpinner;
