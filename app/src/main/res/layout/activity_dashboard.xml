@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aline.a2101036808.DashboardActivity"
+    android:background="@color/backgroundColor">
+
+    <Button
+        android:id="@+id/btnAddPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/addBtn"
+        android:text="Add Patient" />
+
+    <Spinner
+        android:id="@+id/patientsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnAddPatient"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnEnterTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Test"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="76dp"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:background="@color/addBtn"
+        android:layout_below="@+id/patientsSpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp" />
+
+    <Button
+        android:id="@+id/btnDisplayTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Test"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="152dp"
+        android:padding="10dp"
+        android:background="@color/buttons"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignBaseline="@+id/btnEnterTest"
+        android:layout_alignBottom="@+id/btnEnterTest"
+        android:layout_alignRight="@+id/btnAddPatient"
+        android:layout_alignEnd="@+id/btnAddPatient" />
+
+    <Button
+        android:id="@+id/btnDisplayPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:background="@color/buttons"
+        android:padding="10dp"
+        android:text="Patient Information"
+        android:layout_below="@+id/btnEnterTest"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a patient below:"
+        android:layout_below="@+id/btnAddPatient"
+        android:layout_alignRight="@+id/btnEnterTest"
+        android:layout_alignEnd="@+id/btnEnterTest" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:fontFamily="sans-serif"
+        android:text="DASHBOARD"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

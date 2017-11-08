@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aline.a2101036808.EnterTestActivity"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter a new test for: "
+        android:layout_below="@+id/textView29"
+        android:layout_toRightOf="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/txtTestPatientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView6"
+        android:layout_alignRight="@id/textView6"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/textView29"
+        android:layout_toRightOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="10dp"
+        android:text="BPL:" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/textView17"
+        android:text="BPH:" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/textView18"
+        android:text="Temperature (Celsius):" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="10dp"
+        android:layout_below="@id/textView23"
+        android:layout_marginBottom="10dp"
+        android:text="Glucose:" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="10dp"
+        android:layout_below="@id/textView24"
+        android:layout_marginBottom="10dp"
+        android:text="Cholesterol" />
+
+    <EditText
+        android:id="@+id/txtBxBpl"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toRightOf="@+id/textView24"
+        android:layout_toEndOf="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/txtBxBph"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_alignLeft="@+id/txtBxBpl"
+        android:layout_alignStart="@+id/txtBxBpl" />
+
+    <EditText
+        android:id="@+id/txtBxTemp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView23"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/txtBxGlucose"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView24"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtBxCholesterol"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_alignLeft="@+id/txtBxGlucose"
+        android:layout_alignStart="@+id/txtBxGlucose"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/btnAddTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttons"
+        android:text="ADD"
+        android:padding="10dp"
+        android:layout_alignBaseline="@+id/btnCancelTest"
+        android:layout_alignBottom="@+id/btnCancelTest"
+        android:layout_alignRight="@+id/txtBxBph"
+        android:layout_alignEnd="@+id/txtBxBph" />
+
+    <Button
+        android:id="@+id/btnCancelTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cancelBtn"
+        android:text="CANCEL"
+        android:padding="10dp"
+        android:layout_marginTop="83dp"
+        android:layout_below="@+id/txtBxCholesterol"
+        android:layout_toLeftOf="@+id/txtBxTemp"
+        android:layout_toStartOf="@+id/txtBxTemp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEW TEST"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
